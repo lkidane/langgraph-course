@@ -1,0 +1,8 @@
+poetry lock --no-update
+poetry install
+poetry add python-dotenv
+poetry run python react.py
+
+
+
+poetry env info
