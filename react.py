@@ -8,7 +8,7 @@ load_dotenv()
 
 
 import os
-print("TAVILY:", os.getenv("TAVILY_API_KEY"))
+# print("TAVILY:", os.getenv("TAVILY_API_KEY"))
 
 @tool
 def triple(num:float) -> float:
@@ -26,3 +26,8 @@ llm = ChatOllama(
     model="mymodel",   # or mistral, phi3, etc.
     temperature=0
 ).bind_tools(tools)
+
+
+
+
+
